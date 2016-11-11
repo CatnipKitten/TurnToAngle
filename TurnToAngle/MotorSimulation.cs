@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TurnToAngle
 {
-    class Program
+    class MotorSimulation
     {
-        
-        static void Main(string[] args)
+        public static double ReferenceAngle = 100.3;
+        public static void Move(double delta)
         {
-            Java.MoveToAngle(Java.Direction.Left);
+            ReferenceAngle += delta;
         }
     }
 }
